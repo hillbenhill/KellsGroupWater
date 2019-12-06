@@ -113,7 +113,7 @@
                             <div class="field">
                                 <label class="label">Email</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-danger" type="email" placeholder="Email input"
+                                    <input class="input is-danger" name = "email" type="email" placeholder="Email input"
                                         value="any@any.com" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
@@ -134,7 +134,7 @@
                             </div>
                             <div class="field is-grouped">
                                 <div class="control">
-                                    <button class="button is-link" type="submit">Submit</button>
+                                    <button class="button is-link" type="submit" onclick="ValidateEmail(document.form1.text1)">Submit</button>
                                 </div>
                                 <div class="control">
                                     <button class="button is-link is-light">Cancel</button>
@@ -147,26 +147,30 @@
             </div>
 
         </div>
+    </section>
 
         <footer class="footer">
             <div class="container ">
                 <div class="columns">
-
                     <div class="column is-offset-1">
-                        <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
-
+                        <ul>
+                            <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
+                        </ul>
                     </div>
                     <div class="column">
-
-                        <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
-
+                        <ul>
+                            <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
+                        </ul>
                     </div>
                     <div class="column">
-
-                        <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
+                        <ul>
+                            <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
+                        </ul>
                     </div>
                     <div class="column">
-                        <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
+                        <ul>
+                            <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
+                        </ul>
                     </div>
                 </div>
                 <script src="bulma.js"></script>
