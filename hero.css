@@ -102,3 +102,15 @@ footer li:before {
   margin-left: -1.5em;
   color: #147efb;
 }
+
+.mainTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(179, 177, 177, 0.19);
+}
+
+.class facard {
+
+
+  color: #147efb;
+
+}

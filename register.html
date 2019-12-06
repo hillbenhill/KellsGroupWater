@@ -19,6 +19,9 @@
         function cFunction() {
             confirm("do you agree to the terms and condtions ?");
         }
+        window.onload = function () {
+            var input = document.getElementById("myinputbox").focus();
+        }
     </script>
 </head>
 
@@ -27,6 +30,7 @@
         <div class="hero-head" style="padding-top: 20px;">
             <nav class="navbar is-fixed-top">
                 <div class="container">
+                    // navbar burger was taken from the Bulma help pages
                     <div class="navbar-brand">
 
                         <span class="navbar-burger burger" data-target="navbarMenu">
@@ -80,16 +84,17 @@
             <div class="column is-shady">
                 <!-- <div class="card is-shady"> -->
                 <div class="card-image has-text-centered">
-                    <i class="fa fa-address-card-o" style="font-size:60px;color:blue"></i> </div>
+                    <i class="  fa fa-address-card-o "></i> </div>
                 <div class="card-content">
-                    <div class="content">
+                    <div class="facard content">
                         <h4>Regsiter for updates on the group water scheme</h4>
                         <p></p>
                         <form id="demoForm" method="POST">
                             <div class="field">
                                 <label class="label">Name</label>
                                 <div class="control">
-                                    <input class="input" type="text" name="name" placeholder="Text input" required>
+                                    <input id="myinputbox" class="input" type="text" name="name"
+                                        placeholder="Text input" required>
                                 </div>
                             </div>
 
@@ -111,8 +116,8 @@
                             <div class="field">
                                 <label class="label">Email</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-danger" name = "email" type="email" placeholder="Email input"
-                                        value="any@any.com" required>
+                                    <input class="input is-danger" name="email1" type="email" placeholder="Email input"
+                                        value="any@any.com">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -132,7 +137,7 @@
                             </div>
                             <div class="field is-grouped">
                                 <div class="control">
-                                    <button class="button is-link" type="submit" onclick="ValidateEmail(document.form1.text1)">Submit</button>
+                                    <button class="button is-link" type="submit">Submit</button>
                                 </div>
                                 <div class="control">
                                     <button class="button is-link is-light">Cancel</button>
@@ -147,32 +152,32 @@
         </div>
     </section>
 
-        <footer class="footer">
-        
-                <div class="columns">
-                    <div class="column is-offset-1">
-                        <ul>
-                            <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <script src="bulma.js"></script>
-        </footer>
+    <footer class="footer">
+
+        <div class="columns">
+            <div class="column is-offset-1">
+                <ul>
+                    <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="bulma.js"></script>
+    </footer>
 </body>
 
 </html>

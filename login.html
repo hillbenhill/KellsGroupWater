@@ -14,6 +14,11 @@
     <link rel="stylesheet" type='text/css' href='hero.css'>
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
+    <script>
+        window.onload = function () {
+            var input = document.getElementById("emailAddress").focus();
+        }
+    </script>
 </head>
 
 <body>
@@ -83,7 +88,7 @@
 
                         <div class="field">
                             <p class="control has-icons-left has-icons-right">
-                                <input class="input" type="email" placeholder="Email">
+                                <input id="emailAddress" class="input" type="email" placeholder="Email">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
@@ -117,33 +122,33 @@
 
 
 
-        <footer class="footer">
-            
-                <div class="columns">
+    <footer class="footer">
 
-                    <div class="column is-offset-1">
-                        <ul>
-                            <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul>
-                            <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <script src="bulma.js"></script>
-        </footer>
+        <div class="columns">
+
+            <div class="column is-offset-1">
+                <ul>
+                    <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="bulma.js"></script>
+    </footer>
 </body>
 
 </html>
