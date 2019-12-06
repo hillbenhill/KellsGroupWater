@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Kells Group Water Scheme</title>
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,6 +15,11 @@
     <link rel="stylesheet" type='text/css' href='hero.css'>
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
+    <script>
+        function cFunction() {
+            confirm("do you agree to the terms and condtions ?");
+        }
+    </script>
 </head>
 
 <body>
@@ -60,7 +65,7 @@
                     Kells Group Water Scheme
                 </h1>
                 <figure class="image is-16by9">
-                    <img src="assets\Images\The_old_station.jpg">
+                    <img src="assets/Images/The_old_station.jpg" alt="Picture of Kells Station">
                 </figure>
                 <h2 class="subtitle">
                     Kells Group Water Scheme IRD Foilmore
@@ -119,6 +124,14 @@
                                 </div>
                                 <!-- <p class="help is-danger">This email is invalid</p> -->
                             </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" onclick="cFunction()">
+                                        I agree to the <a href=" #">terms and conditions</a>
+                                    </label>
+                                </div>
+                            </div>
                             <div class="field is-grouped">
                                 <div class="control">
                                     <button class="button is-link" type="submit">Submit</button>
@@ -136,28 +149,28 @@
         </div>
 
         <footer class="footer">
-                <div class="container ">
-                    <div class="columns">
-    
-                        <div class="column is-offset-1">
-                            <ul><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></ul>
-    
-                        </div>
-                        <div class="column">
-    
-                            <ul><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></ul>
-    
-                        </div>
-                        <div class="column">
-    
-                            <ul><a href="https://www.goldensofkells.com/">Goldens of Kells</a></ul>
-                        </div>
-                        <div class="column">
-                            <ul><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></ul>
-                        </div>
+            <div class="container ">
+                <div class="columns">
+
+                    <div class="column is-offset-1">
+                        <li><a href="http://www.kellskerry.com/">IRD Foilmore/Kells</a></li>
+
                     </div>
-                    <script src="bulma.js"></script>
-            </footer>
+                    <div class="column">
+
+                        <li><a href="https://kells-bay-house-and-gardens.business.site/">Kells Bay Gardens</a></li>
+
+                    </div>
+                    <div class="column">
+
+                        <li><a href="https://www.goldensofkells.com/">Goldens of Kells</a></li>
+                    </div>
+                    <div class="column">
+                        <li><a href="http://kellsbaycomputing.com/">Kells Bay Computing</a></li>
+                    </div>
+                </div>
+                <script src="bulma.js"></script>
+        </footer>
 </body>
 
 </html>
